@@ -43,8 +43,8 @@ public:
 	void applyMedianFilter(size_t radius);
 	void clear();
 
-	void saveToPPM(const char* filename) const;
-	void saveToBMP(const char* filename, uint16_t bitCount = 32) const;
+	void saveToPpm(const char* filename) const;
+	void saveToBmp(const char* filename, uint16_t bitCount = 32) const;
 
 private:
 	Color* m_pixelData;

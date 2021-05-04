@@ -413,7 +413,7 @@ void Bitmap::clear()
 	memset(m_pixelData, 0, m_width * m_height * sizeof(Color));
 }
 
-void Bitmap::saveToPPM(const char* filename) const
+void Bitmap::saveToPpm(const char* filename) const
 {
 	std::fstream file;
 	file.open(filename);
@@ -432,7 +432,7 @@ void Bitmap::saveToPPM(const char* filename) const
 	file.close();
 }
 
-void Bitmap::saveToBMP(const char* filename, uint16_t bitCount) const
+void Bitmap::saveToBmp(const char* filename, uint16_t bitCount) const
 {
 	std::fstream file(filename, std::ios::out | std::ios::binary);
 
